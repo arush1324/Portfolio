@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skillset</title>
+    <link rel="stylesheet" href="skill.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Ensure the entire body and html cover the full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Black overlay to cover the screen */
+        .black-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black; 
+            z-index: 9999; 
+            animation: fadeOut .7s ease-in forwards; 
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1; 
+            }
+            to {
+                opacity: 0; 
+                display: none; /* Hide the black overlay after the animation completes */
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Black overlay that will fade out -->
+    <div class="black-overlay"></div>
+
+    <div class="fade-in">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" style="fill: rgb(255,255,255);transform: msFilter">
+                            <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z">
+                            </path>
+                        </svg></a></li>
+                <li><a href="contact.html">Reach out</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul>
+                <li><a class="logo" href="index.html">Arush Vaish</a></li>
+                <li class="hideOnSmallScreen"><a href="contact.html">Reach out</a></li>
+                <li class="hideOnSmallScreen"><a href="index.html">Home</a></li>
+                <li onclick="showSidebar()" class="menu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28"
+                            height="28" viewBox="0 0 24 24" style="fill: rgb(255,255,255);transform: msFilter">
+                            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                        </svg></a></li>
+            </ul>
+            <script>
+                function showSidebar() {
+                    const sidebar = document.querySelector('.sidebar');
+                    sidebar.style.display = 'flex';  // Show the sidebar
+                }
+
+                function hideSidebar() {
+                    const sidebar = document.querySelector('.sidebar');
+                    sidebar.style.display = 'none'; // Hide the sidebar
+                }
+
+            </script>
+        </nav>
+
+
+
+        <div class="mainContainer">
+
+            <h1>My Skillset</h1>
+
+            <div class="section">
+
+                <h2>My Ratings</h2>
+
+                <div class="content">
+
+                    <div class="language python">
+
+                        <h3>Python: </h3>
+                        <button></button>
+
+                    </div>
+                    
+                    <div class="language java">
+
+                        <h3>Java: </h3>
+                        <button></button>
+
+                    </div>
+                                        
+                    <div class="language web">
+
+                        <h3>HTML/CSS: </h3>
+                        <button></button>
+
+                    </div>
+                    
+                    <div class="language js">
+
+                        <h3>Javascript: </h3>
+                        <button></button>
+
+                    </div>
+                    
+                    <div class="language rm">
+
+                        <h3>React/Node: </h3>
+                        <button></button>
+
+                    </div>
+                
+                </div>
+
+            </div>
+            
+            <div class="section second">
+
+                <h2>About me</h2>
+
+                <div class="information">
+
+                    <div class="info">Hi! I am Arush, a Teenager of 7th Standard from India and I am going to be Mastering The Field of Machine Learning. I have Crazes in Various Things like:</div>
+                
+                    <div class="hobbies">
+
+                        <ul>
+    
+                            <li>Editing</li>
+                            <li>Solving Puzzles</li>
+                            <li>Playing Piano</li>
+                            <li>Reading Books</li>
+    
+                        </ul>         
+
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
